@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist", //? Каталог, де зберігаються скомпільовані файли
+    "rootDir": "./src", //? Коренева папка проєкту, у якій знаходиться основний файл
+    "allowJs": false, //? Дозволяє компілятору TypeScript обробляти файли JavaScript, за замовчуванням true
+    "experimentalDecorators": true, //? Якщо увімкнути, TypeScript дозволить використання декораторів у коді
+    "emitDecoratorMetadata": true, //? Використовується у зв’язці з experimentalDecorators, додає метадані до декораторів
+    "esModuleInterop": true, //? Дозволяє імпортувати CommonJS модулі, використовуючи синтаксис ES6
+    "lib": ["ES2021", "dom"], //? Визначає, які бібліотеки слід використовувати
+    "module": "es2020", //? Визначає систему модулів для використання
+    "moduleResolution": "node", //? Визначає стратегію розділення модулів
+    "preserveConstEnums": true, //? Якщо true, TypeScript зберігає константні перерахування у згенерованому коді JavaScript, коли увімкнено isolatedModules
+    "skipLibCheck": true, //? Вимикає перевірку типів у бібліотеках node_modules (пришвидшення компіляції)
+    "strictNullChecks": true, //? TypeScript не дозволить використовувати null або undefined, там, де очікується об'єкт
+    "target": "es2019", //? Визначає версію ECMAScript, яка використовується для генерації вихідного коду
+    "strict": true, //? Включає всі суворі перевірки типів у TypeScript
+    "forceConsistentCasingInFileNames": true, //? Примусове узгодження регістру в іменах файлів
+    "sourceMap": true //? Чи створювати файли source map
+  },
+  "include": ["**/*.ts"] //? Визначає, які файли слід включити до процесу компіляції
+}
